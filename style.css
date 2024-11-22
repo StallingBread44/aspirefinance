@@ -1,0 +1,57 @@
+*{
+    font-family: Arial;
+    background-attachment: url('budget_definition.jpeg');
+
+}
+
+
+
+h2{
+    font-weight: lighter;
+}
+
+div {
+    padding: 10px;
+}
+
+#banner {
+    background: url('graph-2.jpg');
+    background-size: cover;
+    background-position: top center;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-size: 50px;
+}
+
+.greybg{
+    background-color: #3283a8;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.button{
+    background-color: darkgrey; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    align-content: center;
+}
+
+.button:hover{
+  background-color: grey; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
