@@ -7,10 +7,44 @@
     <title id>Aspire</title>
 
     <link rel="icon"
-          href="logo.png"
-          type="image/icon type">
+        href="logo.png"
+        type="image/icon type">
 </head>
 <body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+            <div class="navbar__container">
+                <a href="home.html" id="navbar__logo">
+                    <img src="images/logo.png">
+                </a>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="home.html" class="navbar__link">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="about.html" class="navbar__link">About Us</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="contact.html" class="navbar__link">Contact Us</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="https://drive.google.com/file/d/1vwXYa23z-Wdo9hnmVi1DVg3ziZkUvi-8/view?usp=drive_link" class="navbar__link">Learn More</a>
+                    </li>
+                    <li class="navbar__btn mobile">
+                        <a href="signup.html" class="navbar__link">Sign Up</a>
+                    </li>
+                </ul>
+
+                <div class="navbar__btn desktop">
+                    <a href="signup.html" class="button">Sign Up</a>
+                </div>
+
+                <button class="navbar__toggle" id="mobile-menu" aria-label="Toggle Navigation" aria-expanded="False">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
 
 <div id="banner">
     <h1>
@@ -25,11 +59,11 @@
         on financial education, but Texas has not adapted to the change and has not started prioritizing financial education
         as a result showcasing declining Financial literacy rates.” - Federal Reserve Bank of Texas
     </h2>
-    <img src="negative-graph.png">
- </div>
+    <img src="financial-literacy.png">
+</div>
 
 <div class="greybg">
-       <h2>
+    <h2>
         Understanding the concept of utilizing and managing money and taking care of money without going into severe financial debt
         is a  hard task to process among multiple college students. So one of our main project goal is to simplify the understanding
         of all these concepts with the help of charts all around the school showcasing meaningful financial literacy terms in a simple
@@ -47,24 +81,19 @@
 
 </div>
 
-<div>
+<div class="button">
 
     <a href="https://drive.google.com/file/d/1vwXYa23z-Wdo9hnmVi1DVg3ziZkUvi-8/view?usp=drive_link"
-        target="_blank"
-        class="button">
-            Learn More
+        target="_blank">
+        Learn More
     </a>
-    <br><br><br>
     <a href="about.html"
-       target="_blank"
-       class="button">
-            About Us
+    target="_blank">
+        About Us
     </a>
-    <br><br><br>
     <a href="mailto:samuel.deepak.551@k12.friscoisd.org"
-        target="_blank"
-        class="button">
-            Contact Us
+        target="_blank">
+        Contact Us
     </a>
 
 </div>
