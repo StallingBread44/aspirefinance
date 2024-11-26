@@ -4,7 +4,15 @@
     padding: 0;
     font-family: "Parkinsans", sans-serif;
     overflow-x: hidden;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
 }
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
 
 .navbar__container{
     display: flex;
@@ -20,12 +28,13 @@
 }
 
 #navbar__logo{
-    color: lightblue;
-    text-decoration: none;
-    font-size: 2rem;
     cursor: pointer;
-
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    cursor: pointer;
 }
+
 
 .navbar__menu{
     display: flex;
@@ -94,7 +103,6 @@
     .fa-bars{
         line-height: normal  !important;
     }
-
     .navbar__toggle{ 
         display: block;
         position: absolute;
@@ -109,7 +117,6 @@
         cursor: pointer;
         padding: 0;
     }
-
     .navbar__menu{
         flex-direction: column;
         justify-content: flex-start;
@@ -125,12 +132,10 @@
         z-index: 10;
         margin: 0;
     }
-
     .navbar__menu.active{
         left: 0;
         opacity: 1;
     }
-
     .navbar__item{
         width: 100%;
         display: flex;
@@ -147,19 +152,116 @@
         padding-bottom: 2rem;
         width: 100%;
     }
-
     .button{
         width: 80%;
         height: 60px;
         justify-content: center;
         align-items: center;
     }
-
     .navbar__link{
         display: flex;
         padding: 2rem;
         width: 100%;
         text-align: center;
         justify-content: center;
+    }
+}
+
+.hero{
+    background: #141414;
+}
+
+.hero__container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.hero__images{
+    text-align: center;
+}
+
+#fliteracy{
+    height: 75%;
+    width: 50%;
+    border: 10px solid #003865;
+    border-radius: 5px;
+}
+
+.hero__content h1{
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
+.hero__content p{
+    color: white;
+    text-align: center;
+    padding: 50px 200px;
+    font-size: 1.5rem;
+}
+
+
+
+.hero__content h3{
+    color: white;
+    text-align: center;
+    padding: 5px 200px;
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 960px){
+    .hero{
+        background: #141414;
+    }
+    
+    .hero__container{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+    }
+    
+    
+    #fliteracy{
+        height: auto;
+        width: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        border: 10px solid #003865;
+        border-radius: 5px;
+        padding: 0;
+    }
+
+    
+    .hero__content h1{
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 100px;
+        padding-bottom: 10px;
+        
+
+    }
+    
+    .hero__content p{
+        color: white;
+        text-align: center;
+        font-size: 12px;
+        padding: 25px 25px;
+
+    }
+    
+    
+    
+    .hero__content h3{
+        color: white;
+        text-align: center;
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 0;
+        padding: 0 25px;
+
     }
 }
