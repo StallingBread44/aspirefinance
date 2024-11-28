@@ -3,18 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>About Us</title>
+    <link rel="stylesheet" href="about-style.css">
+    <script src="https://kit.fontawesome.com/55ce2a3b13.js" crossorigin="anonymous"></script>    
      <link rel="icon"
-          href="logo.png"
+          href="images/logo.png"
           type="image/icon type">
+          
 </head>
 <body>
-<div id="header"
-    align="center">
-    <h1>
-        About Us
-    </h1>
-</div>
-<br><br><br><br><br><br><br><br><br><br>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+            <div class="navbar__container">
+                <a href="index.html" id="navbar__logo">
+                    <img src="images/logo.png" alt="Logo" id="navbar__logo">
+                </a>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="index.html" class="navbar__link">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="about.html" class="navbar__link">About Us</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="contact.html" class="navbar__link">Contact Us</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="https://drive.google.com/file/d/1vwXYa23z-Wdo9hnmVi1DVg3ziZkUvi-8/view?usp=drive_link" class="navbar__link">Learn More</a>
+                    </li>
+                    <li class="navbar__btn mobile">
+                        <a href="signup.html" class="button">Sign Up</a>
+                    </li>
+                </ul>
+
+                <div class="navbar__btn desktop">
+                    <a href="signup.html" class="button">Sign Up</a>
+                </div>
+
+                <button 
+                    class="navbar__toggle" 
+                    id="mobile-menu" 
+                    aria-label="Toggle Navigation" 
+                    aria-expanded=""
+                    false
+                >
+                    
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+<!-- 
 <div>
 
     Our Mission
@@ -42,6 +81,61 @@ Get Involved
 Join us in making a difference! Whether you’re a student, educator, donor, or volunteer, your support helps us bring financial literacy to campuses across the country.
     </h1>
 </div>
+-->
+
+<main>
+    <section class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="cell" >
+                    <h2 id="t1">
+                        Who We Are                
+                    </h1>
+                    <div class="image">
+                        <img src="images/educators.png" id="educators">
+                    </div>           
+                    <p>
+                        We are a passionate team of educators, financial professionals, and advocates committed to bridging the financial literacy gap among college students. Recognizing the challenges many young adults face with managing finances, we aim to provide accessible, practical, and engaging resources to help them thrive.
+                    </p>
+                </div>
+                <div class="cell" >
+                    <h2 id="t2">
+                        Our Vision
+                    </h1>
+                    <div class="image">
+                        <img src="images/idea_bulb.jpg" id="light_bulb">
+                    </div>
+                    <p>
+                        We envision a future where every student enters adulthood equipped with the tools to manage money wisely, build wealth, and avoid financial pitfalls.
+                    </p>
+                </div>
+                <div class="cell">
+                    <h2 id="t3">
+                        What We Do
+                    </h2>
+                    <p id="p3">
+                    Workshops and Seminars: Interactive sessions on budgeting, saving, investing, and managing student loans.
+                    One-on-One Coaching: Personalized financial advice tailored to students' unique needs.
+                    Digital Resources: Free tools, guides, and videos to make financial concepts easy to understand.
+                    Community Engagement: Partnerships with colleges and organizations to bring financial literacy to more students.
+                    </p>
+                </div>
+                <div class="cell">
+                    <h2 id="t4">
+                        Why It Matters
+                    </h2>
+                    <p id="p4">
+                        Studies show that many students graduate with significant debt and little understanding of how to manage their finances. By teaching financial literacy, we aim to reduce stress, improve economic outcomes, and give students the confidence to build a secure financial future.
+                    </p>
+                </div>
+            </div>
+            <div class="hero__images">
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
 
 </body>
 </html>
+
