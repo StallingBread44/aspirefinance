@@ -192,30 +192,49 @@
         text-align: center;
         justify-content: center;
     }
-    .hero{
-        background: #141414;
-    }
-    .hero__content{
-        display: grid;
-        grid-template-columns: auto auto;
-        align-items: center;
-    }
-    .hero__container{
-        align-items: center;
-    }
     .cell p{
         color: white;
         text-align: center;
-        padding: 5px 50px 20px 20px;
-        font-size: 1.5rem;
-        text-align: center;
+        padding: 25px 25px 15px 25px;
+        font-size: 1rem;
     }
     .cell h2{
         color: white;
-        align-items: center;
         text-align: center;
-        padding: 100px 5px 20px 20px;
-        font-size: 2.5rem;
+        font-size: 3rem;
+        padding: 100px 0 25px 0;
+    }
+
+    #h1{
+        padding-top: 250px;
+    }
+    
+    #p3{
+        padding-bottom: 150px;
+    }
+
+    .image{
+        display: flex;
+        justify-content: center; 
+        height: 250px;
+    }
+    
+    #sam{
+        width: auto;
+        height: 240px;
+    }
+    #vijay{
+        width: auto;
+        height: 240px;
+    }
+    #sk{
+        width: auto;
+        height: 240px;
+    }    
+    .hero__content{
+        display: grid;
+        grid-template-columns: auto;
+        box-sizing: border-box; /* Ensures padding doesn't affect the layout size */
     }
 
 }

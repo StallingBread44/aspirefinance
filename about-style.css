@@ -198,30 +198,57 @@
         text-align: center;
         justify-content: center;
     }
-    .hero{
-        background: #141414;
-    }
     .hero__content{
         display: grid;
-        grid-template-columns: auto auto;
-        align-items: center;
+        grid-template-columns: auto;
+        box-sizing: border-box; /* Ensures padding doesn't affect the layout size */
     }
     .hero__container{
         align-items: center;
+        margin: 0;
+        padding: 0;
     }
     .cell p{
         color: white;
         text-align: center;
-        padding: 5px 50px 20px 20px;
-        font-size: 1.5rem;
-        text-align: center;
+        padding: 0 25px 10px 25px;
+        font-size: 1rem;
     }
     .cell h2{
         color: white;
-        align-items: center;
         text-align: center;
-        padding: 100px 5px 20px 20px;
         font-size: 2.5rem;
+        padding: 100px 0 5px 0;
     }
 
+    #educators{
+        width: auto;
+        height: 240px;
+        padding-bottom: 5px;
+    }
+
+    .image{
+        display: flex;
+        justify-content: center; 
+        height: 250px;
+        align-items: center;
+    }
+
+    #light_bulb{
+        width: auto;
+        height: 190px;
+        border: solid white;
+        border-radius: 4px;
+    }
+
+    #resources{
+        width: auto;
+        height: 240px;
+        border: solid white;
+        border-radius: 4px;
+    }
+
+    #p4{
+        padding-bottom: 100px;
+    }
 }
