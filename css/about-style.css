@@ -1,0 +1,159 @@
+.hero__title{
+    padding-top: 125px;
+    font-size: 2.5rem;
+    color: rgb(110, 180, 177);
+    text-align: center;
+}
+.hero__members{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    box-sizing: border-box; /* Ensures padding doesn't affect the layout size */
+    padding-top: 50px;
+}
+.hero__members h1{
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    padding-top: 100px;
+}
+.hero__members h2{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 25px ;
+}
+.hero__members p{
+    color: white;
+    text-align: center;
+    padding: 0 25px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.image__container{
+    display: flex;
+    justify-content: center; 
+    height: 250px;
+    padding: 10px 0 20px 0;
+}
+.image__item{
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: 25% center;
+}
+.hero__aboutus{
+    display: grid;
+    grid-template-columns: auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 25px;
+}
+.hero__aboutus h2{
+    color: white;
+    font-size: 3rem;
+    padding: 50px 0 10px 0;
+}
+.hero__aboutus p{
+    color: white;
+    font-weight: lighter;
+    font-size: 1.25rem;
+    padding: 30px 50px 30px 50px;
+}
+#educators{
+    width: auto;
+    height: 200px;
+}
+#light_bulb{
+    width: auto;
+    height: 200px;
+    border-radius: 1000px;
+}
+#resources{
+    width: auto;
+    height: 200px;
+    border-radius: 100px;
+}
+#negative_green-graph{
+    width: auto;
+    height: 200px;
+    border-radius: 100px;
+}
+
+
+@media screen and (max-width: 968px) {
+    .hero__members{
+        display: grid;
+        grid-template-columns: auto;
+        box-sizing: border-box; /* Ensures padding doesn't affect the layout size */
+        padding-top: 50px;
+    }
+    .hero__content{
+        display: grid;
+        grid-template-columns: auto;
+        box-sizing: border-box; /* Ensures padding doesn't affect the layout size */
+    }
+    #h1{
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        padding: 0 25px ;
+    }
+    #t1{
+        padding-top: 25px;
+    }
+    .hero__container{
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .hero__aboutus{
+        display: grid;
+        grid-template-columns: auto;
+        box-sizing: border-box;
+        text-align: center;
+        padding-top: 25px;
+    }
+    .cell p{
+        color: white;
+        text-align: center;
+        padding: 0 25px 10px 25px;
+        font-size: 1rem;
+    }
+    .cell h2{
+        color: white;
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 100px 0 5px 0;
+    }
+
+    #educators{
+        width: auto;
+        height: 240px;
+        padding-bottom: 5px;
+    }
+
+    .image{
+        display: flex;
+        justify-content: center; 
+        height: 250px;
+        align-items: center;
+    }
+
+    #light_bulb{
+        width: auto;
+        height: 190px;
+        border: solid white;
+        border-radius: 1000px
+    }
+    
+
+    #resources{
+        width: auto;
+        height: 240px;
+        border: solid white;
+        border-radius: 100px;
+    }
+
+    #p4{
+        padding-bottom: 100px;
+    }
+}

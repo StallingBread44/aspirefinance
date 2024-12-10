@@ -6,6 +6,7 @@
     overflow-x: hidden;
     -ms-overflow-style: none; 
     scrollbar-width: none;
+    background-color: #131313;
 }
 *::-webkit-scrollbar {
     display: none;
@@ -19,7 +20,7 @@
     z-index: 1000px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 100px 0 50px;
     position: fixed;
 }
 #navbar__logo{
@@ -35,6 +36,7 @@
     list-style: none;
     margin: 0 auto;
     overflow: hidden; 
+    background-color: black;
 }
 .navbar__item{
     height: 80px;
@@ -48,7 +50,8 @@
     padding: 0px 1rem;
     display: flex;
     align-items: center;
-    overflow: hidden; 
+    overflow: hidden;
+    background-color: black;
 }
 .navbar__link:hover{
     color: lightblue;
@@ -87,7 +90,6 @@
 }
 .hero__container{
     display: grid;
-    grid-template-rows: 1fr 1fr;
     align-items: center;
 }
 .hero__images{
@@ -109,38 +111,102 @@
 .hero__content p{
     color: white;
     text-align: center;
-    padding: 100px 50px;
+    padding: 50px 200px;
     font-size: 1.5rem;
+    font-weight: lighter;
 }
 .hero__content h3{
     color: white;
     text-align: center;
-    padding: 100px 100px;
+    padding: 5px 200px;
     font-size: 2.5rem;
 }
-.module__link{
-    color: white;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-.module__item{
-    padding: 10px 0 10px 0;
-}
-.module__content{
+
+/* Footer CSS */
+
+.footer__container{
+    background-color: black;
+    padding: 5rem 0;
     display: flex;
-    justify-content: center;
-    padding: 50px;
-}
-#backbutton{
-    color: white;
-    padding: 50px;
-    font-size: 2rem;
-    text-decoration: none;
-}
-.back__button{
-    padding: 100px 20px 0 20px;
+    flex-direction: column;
+    align-items: center;
 }
 
+#footer-logo{
+    color: lightblue;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background-color: black;
+    height: 35%;
+    width: 35%;
+}
+.footer__logo{
+    background-color: black;
+}
+.footer__links{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.footer__link-wrapper{
+    display:flex;
+    background-color: black;
+}
+.footer__link-items{
+    display:flex;
+    flex-direction: column;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    background-color: black;
+}
+.footer__link-items h2{
+    margin-bottom: 1rem;
+    color: lightblue;
+    background-color: black;
+}
+.footer__link-items a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-weight: lighter;
+    background-color: black;
+}
+.footer__link-items a:hover{
+    color: lightblue;
+    transition: 0.3s ease-out;
+}
+.social__media{
+    max-width: 1000px;
+    width: 100%;
+    background-color: black;
+    padding: 0 2rem;
+}
+.social__media-wrap{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 40px auto 0 auto;
+    background-color: black;
+}
+.social__icons{
+    display:flex;
+    justify-content: space-between;
+    width: 240px;
+    background-color: black;
+}
+.social__icon-link{
+    background-color: black;
+    color: lightblue;
+    font-size: 24px;
+}
 @media screen and (max-width: 968px) {
     .fa-bars{
         line-height: normal  !important;
@@ -170,7 +236,7 @@
         height: calc(100% - 80px);
         opacity: 0;
         transition: all 0.5s ease;
-        background-color: #131313;
+        background-color: black;
         z-index: 10;
         margin: 0;
     }
@@ -200,18 +266,14 @@
     }
     .navbar__link{
         display: flex;
-        padding: 2rem;
+        padding: 1rem;
+        font-size: 1.5rem;
         width: 100%;
         text-align: center;
         justify-content: center;
     }
     .hero{
         background: #141414;
-    }
-    .hero__container{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        align-items: center;
     }
     #fliteracy{
         height: auto;
@@ -233,7 +295,7 @@
         color: white;
         text-align: center;
         font-size: 12px;
-        padding: 25px 25px;
+        padding: 15px 25px 15px 25px;
     }
     .hero__content h3{
         color: white;
@@ -244,6 +306,40 @@
         padding: 0 25px;
     }
     #lastp{
-        padding-bottom: 100px;
+        padding-bottom: 25px;
+    }
+@media screen and (max-width: 820px) {
+    
+}
+    .footer__links{
+        padding-top: 2rem;
+    }
+    .footer__link-wrapper{
+        flex-direction: column;
+    }
+    .social__media-wrap{
+        flex-direction: column;
+    }
+    .footer__link-wrapper{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .footer__logo{
+        border-bottom: 2px solid white;
+    }
+    #footer-logo{
+    }
+    .social__icons{
+        padding-top: 20px
+    }
+}
+
+@media screen and(max-width: 480px){
+    .social__media{
+        text-align: center;
+    }
+    .footer__links-items{
+        width: 100%;
+        padding: 10px;
     }
 }

@@ -4,66 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id>Aspire</title>
-    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="/css/main.css">
     <script src="https://kit.fontawesome.com/55ce2a3b13.js" crossorigin="anonymous"></script>    
     <link rel="icon"
-        href="images/logo.png"
+        href="/images/logo.png"
         type="image/icon type">
 </head>
+
 <body>
     <header>
-        <nav class="navbar" role="navigation" aria-label="Main Navigation">
-            <div class="navbar__container">
-                <a href="/index.html" id="navbar__logo">
-                    <img src="/images/logo.png" alt="Logo" id="navbar__logo">
-                </a>
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="/index.html" class="navbar__link">Home</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="/about.html" class="navbar__link">About Us</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="/contact.html" class="navbar__link">Contact Us</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="https://drive.google.com/file/d/1vwXYa23z-Wdo9hnmVi1DVg3ziZkUvi-8/view?usp=drive_link" class="navbar__link">Essay</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href='/curriculum/index-curriculum.html' class="navbar__link">Learn</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="/video-game/index.html" class="navbrar__link">Game</a>
-                    </li>
-                    <li class="navbar__btn mobile">
-                        <a href="/signup.html" class="button">Sign Up</a>
-                    </li>
-                </ul>
-
-                <div class="navbar__btn desktop">
-                    <a href="signup.html" class="button">Sign Up</a>
-                </div>
-
-                <button 
-                    class="navbar__toggle" 
-                    id="mobile-menu" 
-                    aria-label="Toggle Navigation" 
-                    aria-expanded=""
-                    false
-                >
-                    
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-        </nav>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <div id="navbar__placeholder">
+        </div>
+        
+        <script>
+        $(function(){
+            $("#navbar__placeholder").load("/website/navbar.html");
+        });
+        </script>
     </header>
 
     <main>
+
         <section class="hero">
             <div class="hero__container">
                 <div class="hero__content">
-                    <h1><marquee></marquee>
+                    <h1>
                         Why care about financial literacy?
                     </h1>
                     <p id="intro">
@@ -93,73 +59,21 @@
                 </div>
             </div>
         </section>
+        
         <footer>
-            <div class="footer__links">
-                <div class="footer__link-wrapper">
-                    <div class="footer__link-items">
-                        <h2>
-                            About Us
-                        </h2>
-                        <a href="about.html">Info</a>
-                        <a href="frisco.html">Where we're from</a>
-                        <a href="https://drive.google.com/file/d/1vwXYa23z-Wdo9hnmVi1DVg3ziZkUvi-8/view?usp=drive_link">Deca Essay</a>
-                    </div>
-                    <div class="footer__link-items">
-                        <h2>
-                            Contact Us
-                        </h2>
-                        <a href="about.html" target="_blank">Samuel Deepak</a>
-                        <a href="frisco.html" target="_blank">Shashank Kamineni</a>
-                        <a href="frisco.html" target="_blank">Vijay Venkatasan</a>
-                    </div>
-                    <div class="footer__link-items">
-                        <h2>
-                            Social Media
-                        </h2>
-                        <a href="https://instagram.com" target="_blank">Instagram</a>
-                        <a href="https://youtube.com" target="_blank">Youtube</a>
-                        <a href="https://twitch.tv" target="_blank">Twitch</a>
-                    </div>
-                </div>
-                <section class="social__media">
-                    <div class="social__media-wrap">
-                        <div class="footer__logo">
-                            <a href="" id="footer-logo">Aspire Finances</a>
-                        </div>
-                        <p class="website__rights">
-                            © Aspire Finances <span id="year"></span> All rights reserved
-                        </p>
-                        <div class="social__icons">
-                            <a href="https://instagram.com" class="social__icon-link" target="_blank">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </section>
+            <div id="footer__placeholder">
+                <p>Footer</p>
             </div>
+            <script>
+            $(function(){
+                $("#footer__placeholder").load("/website/footer.html");
+            });
+            </script>
         </footer>
-    
-<!--
-<div class="button">
+    </main>
 
-    <a href="https://drive.google.com/file/d/1vwXYa23z-Wdo9hnmVi1DVg3ziZkUvi-8/view?usp=drive_link"
-        target="_blank">
-        Learn More
-    </a>
-    <a href="about.html"
-    target="_blank">
-        About Us
-    </a>
-    <a href="mailto:samuel.deepak.551@k12.friscoisd.org"
-        target="_blank">
-        Contact Us
-    </a>
 
-</div>
-
--->
-        </main>
-<script src="app.js"></script>
+    <script src="/assets/app.js"></script>
 
 </body>
 </html>
