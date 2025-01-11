@@ -29,6 +29,7 @@
     height: 50px;
     overflow: hidden;
     cursor: pointer;
+    background-color: black;
 }
 .navbar__menu{
     display: flex;
@@ -135,14 +136,13 @@
 #footer-logo{
     color: lightblue;
     background-color: black;
-    display: flex;
-    align-items: center;
     text-decoration: none;
     font-size: 2rem;
     margin-bottom: 1rem;
     background-color: black;
-    height: 35%;
-    width: 35%;
+    width: auto;
+    height: 150px;
+    padding: 0 50px;
 }
 .footer__logo{
     background-color: black;
@@ -157,6 +157,7 @@
 .footer__link-wrapper{
     display:flex;
     background-color: black;
+
 }
 .footer__link-items{
     display:flex;
@@ -190,8 +191,9 @@
 }
 .social__media-wrap{
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     width: 90%;
     margin: 40px auto 0 auto;
     background-color: black;
@@ -205,8 +207,17 @@
 .social__icon-link{
     background-color: black;
     color: lightblue;
-    font-size: 24px;
+    font-size: 48px;
 }
+.social__icon-link i{
+    background-color: black;
+    color: lightblue;
+    font-size: 48px;
+}
+.footer__logo-2{
+
+}
+
 @media screen and (max-width: 968px) {
     .fa-bars{
         line-height: normal  !important;
