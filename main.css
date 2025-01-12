@@ -137,7 +137,6 @@
     background-color: black;
     text-decoration: none;
     font-size: 2rem;
-    margin-bottom: 1rem;
     background-color: black;
     width: auto;
     height: 150px;
@@ -336,8 +335,6 @@
     }
     .footer__logo{
         border-bottom: 2px solid white;
-    }
-    #footer-logo{
     }
     .social__icons{
         padding-top: 20px
