@@ -145,6 +145,9 @@
 .footer__logo{
     background-color: black;
 }
+.footer__logo-2{
+    background-color: black;
+}
 .footer__links{
     width: 100%;
     max-width: 1000px;
