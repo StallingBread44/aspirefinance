@@ -24,7 +24,6 @@
     src: url(../fonts/Gotham-font-family/Gotham/Gotham-Thin.otf);
 }
 #navbar__title-text{
-    padding-left: 20px;
     color: white;
     background-color: black;
 }
@@ -279,7 +278,7 @@
         z-index: 1000px;
         width: 100%;
         margin: 0 auto;
-        padding: 0;
+        padding: 0 80px 0 20px;
         position: fixed;
     }
     #fliteracy{
@@ -295,7 +294,7 @@
         line-height: normal  !important;
     }
     .navbar__toggle{ 
-        display: block;
+        display: flex;
         position: absolute;
         right: 20px;
         top: 50%;
