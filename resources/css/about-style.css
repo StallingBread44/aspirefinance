@@ -126,6 +126,10 @@
 
 
 @media screen and (max-width: 968px) {
+    .hero__title{
+        font-size: 2rem;
+    }
+    
     .hero__members{
         display: grid;
         grid-template-columns: auto;
@@ -138,7 +142,7 @@
         box-sizing: border-box; /* Ensures padding doesn't affect the layout size */
     }
     #h1{
-        color: white;
+        color: #000000;
         text-align: center;
         font-size: 2rem;
         padding: 0 25px ;
@@ -159,13 +163,13 @@
         padding-top: 25px;
     }
     .cell p{
-        color: white;
+        color: #000000;
         text-align: center;
         padding: 0 25px 10px 25px;
         font-size: 1rem;
     }
     .cell h2{
-        color: white;
+        color: #000000;
         text-align: center;
         font-size: 2.5rem;
         padding: 100px 0 5px 0;

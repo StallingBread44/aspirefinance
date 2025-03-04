@@ -37,7 +37,7 @@
     z-index: 1000px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 100px 0 50px;
+    padding: 0 270px 0 50px;
     position: fixed;
 }
 #navbar__logo{
@@ -236,7 +236,7 @@
 .social__icons{
     display:flex;
     justify-content: space-between;
-    width: 240px;
+    width: 150px;
     background-color: black;
 }
 .social__icon-link{
@@ -258,6 +258,39 @@
 
 
 @media screen and (max-width: 968px) {
+    .body{
+        background-color: #000000;
+    }
+    .hero__home-img{
+        display:none;
+    }
+    .hero__title{
+        padding: 0px;
+    }
+    #wlcmsg{
+        display: none;
+    }
+    .navbar__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        background: black;
+        z-index: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 80px 0 20px;
+        position: fixed;
+    }
+    #fliteracy{
+        height: 30px;
+        width: auto;
+        border-radius: 5px;
+        padding:20px;
+    }
+    #lastp{
+        padding: 20px;
+    }
     .fa-bars{
         line-height: normal  !important;
     }
@@ -267,7 +300,7 @@
         right: 20px;
         top: 50%;
         transform: translateY(-50%);
-        color: #fff;
+        color: #000000;
         z-index: 10; 
         font-size: 1.5rem; 
         border: none;
@@ -335,20 +368,20 @@
         padding: 0;
     }
     .hero__content h1{
-        color: white;
+        color: #000000;
         text-align: center;
         font-size: 2rem;
-        padding-top: 100px;
+        padding-top: 10px;
         padding-bottom: 10px;
     }
     .hero__content p{
-        color: white;
+        color: #000000;
         text-align: center;
         font-size: 12px;
         padding: 15px 25px 15px 25px;
     }
     .hero__content h3{
-        color: white;
+        color: #000000;
         text-align: center;
         font-size: 12px;
         padding-top: 5px;
@@ -361,11 +394,11 @@
 @media screen and (max-width: 820px) {
     
 }
-    .footer__links{
-        padding-top: 2rem;
-    }
+
     .footer__link-wrapper{
         flex-direction: column;
+        padding: 1rem;
+        font-size: 14px;
     }
     .social__media-wrap{
         flex-direction: column;
@@ -387,7 +420,6 @@
         text-align: center;
     }
     .footer__links-items{
-        width: 100%;
-        padding: 10px;
+        padding: 5px;
     }
 }
