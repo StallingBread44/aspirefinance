@@ -249,9 +249,6 @@
     color: lightgreen;
     font-size: 48px;
 }
-.footer__logo-2{
-
-}
 #lastp{
     padding:50px 100px;
 }
@@ -263,6 +260,9 @@
     }
     .hero__home-img{
         display:none;
+    }
+    #startmsg{
+        padding-top: 50px;
     }
     .hero__title{
         padding: 0px;
@@ -279,7 +279,7 @@
         z-index: 1000px;
         width: 100%;
         margin: 0 auto;
-        padding: 0 80px 0 20px;
+        padding: 0;
         position: fixed;
     }
     #fliteracy{
